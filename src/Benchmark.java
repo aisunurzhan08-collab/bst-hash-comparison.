@@ -36,7 +36,6 @@ public class Benchmark {
                     for (int v : values) if (!hash.search(v)) throw new IllegalStateException("Hash search failed");
                     hashSearch += System.nanoTime() - start;
 
-                    // Delete all inserted values, in the same order for both structures.
                     start = System.nanoTime();
                     for (int v : values) bst.delete(v);
                     bstDelete += System.nanoTime() - start;
