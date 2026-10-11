@@ -18,7 +18,6 @@ public class BinarySearchTree {
         if (node == null) return new Node(key);
         if (key < node.key) node.left = insert(node.left, key);
         else if (key > node.key) node.right = insert(node.right, key);
-        // Duplicate keys are ignored.
         return node;
     }
 
@@ -49,8 +48,7 @@ public class BinarySearchTree {
         }
         return node;
     }
-
-    // Used only to keep the benchmark from being optimized away.
+    
     public int size() {
         int count = 0;
         Deque<Node> stack = new ArrayDeque<>();
