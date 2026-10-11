@@ -66,6 +66,3 @@ Runtime depends on the computer, Java version, background applications, implemen
 
 ## Conclusion
 For this workload, a hash table is expected to provide faster average insertion, searching, and deletion when the hash distribution is good and the load factor is low. A BST maintains key order and supports ordered traversal, while this hash table does not. A self-balancing BST (such as AVL or Red-Black) guarantees O(log n) operations, unlike the unbalanced BST implemented here.
-
-## Handwritten report reminder
-Write your own one-page explanation in your own words, based on the CSV numbers from your own run. Include: the goal, the two implementations, the observed trend for all three sizes, why the results differ, and one limitation of the experiment. Do not copy this README into the handwritten report.
